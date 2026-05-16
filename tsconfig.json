@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+
+    "rootDir": "./src",
+
+    "outDir": "./dist",
+
+    "module": "node16",
+
+    "moduleResolution": "node16",
+
+    "target": "es2020",
+
+    "types": ["node"],
+
+    "sourceMap": true,
+
+    "declaration": true,
+
+    "declarationMap": true,
+
+    "noUncheckedIndexedAccess": true,
+
+    "exactOptionalPropertyTypes": false,
+
+    "strict": true,
+
+    "esModuleInterop": true,
+
+    "jsx": "react-jsx",
+
+    "verbatimModuleSyntax": false,
+
+    "isolatedModules": true,
+
+    "moduleDetection": "force",
+
+    "skipLibCheck": true
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
