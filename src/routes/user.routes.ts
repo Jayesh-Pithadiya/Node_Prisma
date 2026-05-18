@@ -54,7 +54,7 @@ router.get("/:id", async (req, res) => {
         // If your schema uses Int for ID, use Number(id)
         const user = await prisma.user.findUnique({
             where: {
-                id: isNaN(Number(id)) ? id : Number(id) as any
+                id: Number(id)
             }
         });
 
@@ -77,7 +77,7 @@ router.put("/:id", async (req, res) => {
 
         const updatedUser = await prisma.user.update({
             where: {
-                id: isNaN(Number(id)) ? id : Number(id) as any
+                id: Number(id)
             },
             data: {
                 name,
@@ -104,7 +104,7 @@ router.delete("/:id", async (req, res) => {
 
         const deletedUser = await prisma.user.delete({
             where: {
-                id: isNaN(Number(id)) ? id : Number(id) as any
+                id: Number(id)
             }
         });
 

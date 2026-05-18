@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn src/index.ts",
     "generate": "prisma generate",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "migrate:all": "prisma db push && prisma generate && ts-node migrate.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +17,9 @@
   "dependencies": {
     "@prisma/client": "^6.16.2",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongodb": "^7.2.0",
+    "pg": "^8.20.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
