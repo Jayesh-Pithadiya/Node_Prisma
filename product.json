@@ -1,0 +1,25 @@
+[{
+	"_id": {
+		"$oid": "6a0ad69246d42aae4c31062b"
+	},
+	"name": "Samsung S24",
+	"price": 75000,
+	"description": "Samsung flagship phone"
+},
+{
+	"_id": {
+		"$oid": "6a0ad69246d42aae4c31062c"
+	},
+	"name": "Redmi Note 13",
+	"price": 20000,
+	"description": "Budget smartphone"
+},
+{
+	"_id": {
+		"$oid": "6a0ad69246d42aae4c31062d"
+	},
+	"name": "MacBook Air M2",
+	"price": 110000,
+	"description": "Apple laptop for professionals"
+}]
+
